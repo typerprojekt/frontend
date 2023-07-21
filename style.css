@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url("C:/Users/Tomek/Desktop/KursWebDev/Projekt Typer/images/Maskotka2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* nav { */
+/* background-color: #ddd; */
+/* display: flex; */
+/* justify-content: space-between; */
+/* align-items: center; */
+/* height: 8vh; */
+/* padding: 2em; */
+/* } */
+/* ul { */
+/* display: flex; */
+/* list-style-type: none; */
+/* } */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+h1 {
+  opacity: 0;
+}
+
+nav {
+  background-color: #343a40;
+  padding-left: 5%;
+  margin-bottom: 40px;
+  /* overflow: hidden; */
+}
+
+nav ul {
+  width: 100vw;
+  margin: 0 auto;
+  list-style: none;
+}
+
+nav ul li.border {
+  border-color: #343a40;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  line-height: 70px;
+  text-decoration: none;
+  color: #bbb;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 0 40px;
+  border-right: 2px solid black;
+}
+
+nav ul li a i {
+  padding-right: 20px;
+  vertical-align: -3px;
+}
+
+.fa {
+  font-size: 24px;
+}
+.burger {
+  opacity: 0;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+aside .login {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1060px) {
+  div .fa-bars {
+    font-size: 48px;
+  }
+  .burger {
+    opacity: 1;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    font-size: 40px;
+    color: grey;
+  }
+  .burger:hover {
+    opacity: 1;
+    color: black;
+    cursor: pointer;
+  }
+  nav {
+    position: absolute;
+    width: 30vw;
+  }
+  nav ul {
+    display: flex;
+    position: absolute;
+    /* right: 0; */
+
+    /* width: 300px; */
+    /* height: 95vh; */
+    /* top: 5vh; */
+    background-color: #343a40;
+
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    opacity: 1;
+  }
+}
